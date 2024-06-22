@@ -1,0 +1,144 @@
+/* styles.css (Updated) */
+
+.player {
+  min-height: 8.4rem;
+  margin-top: 1.2rem;
+  padding: 1.2rem 2.4rem;
+
+  display: grid;
+  grid-template-columns: 0.3fr 0.4fr 0.3fr;
+  gap: 24px;
+  grid-column: 1/-1;
+}
+
+.player__repeat {
+  color: #1db954 !important;
+}
+
+.player__icons {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.player__icons svg {
+  @apply text-gray-300 cursor-pointer;
+  @apply w-6 h-6;
+}
+
+.player__icon-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+
+  svg {
+    @apply text-white;
+    @apply w-8 h-8 transform scale-150;
+  }
+}
+
+.player__range {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  input[type="range"] {
+    @apply w-full;
+  }
+
+  .player__range-time {
+    @apply w-16 text-sm;
+  }
+}
+
+.player__song {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  img {
+    @apply h-28 w-28 rounded-sm;
+  }
+
+  .player__song-context {
+    @apply flex flex-col;
+  }
+
+  .player__song-name {
+    @apply text-white text-lg;
+  }
+
+  .player__song-artist,
+  .player__song-artist:link,
+  .player__song-artist:visited {
+    @apply text-sm text-white no-underline;
+  }
+
+  .player__song__like {
+    @apply text-green-500 text-2xl;
+
+    &--active {
+      @apply fill-current;
+    }
+  }
+}
+
+.player__volume {
+  @apply ml-auto; /* Move volume controls to the right */
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 12rem; /* Fixed width */
+}
+
+.player__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;
+  font-size: 2rem;
+}
+
+/* Chrome and Safari */
+input[type="range"] {
+  @apply h-1;
+  @apply appearance-none bg-gray-600 rounded-full w-full cursor-pointer;
+
+  &::before {
+    @apply bg-white;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+
+  &:hover::before {
+    @apply bg-green-500;
+  }
+
+  &::-webkit-slider-thumb {
+    @apply h-4 w-4 rounded-full bg-white cursor-pointer;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+
+  &:hover::-webkit-slider-thumb {
+    @apply shadow-sm bg-white;
+  }
+}
+
+.spinner {
+  animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

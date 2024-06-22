@@ -1,0 +1,85 @@
+/* .playlist__header */
+.playlist__header {
+  @apply h-44 py-0 px-24 pb-24 flex items-end gap-6 text-white;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1685521885141-89c83b12ca65?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+}
+
+/* .playlist__img */
+.playlist__img {
+  @apply h-96 w-96 min-w-96;
+}
+
+.playlist__img img {
+  @apply h-full w-full shadow-lg;
+}
+
+/* .playlist__name */
+.playlist__name {
+  @apply mb-12 text-6xl font-bold tracking-wide;
+}
+
+/* .playlist__des */
+.playlist__des {
+  @apply mb-16;
+}
+
+/* .playlist__user */
+.playlist__user {
+  @apply flex items-center gap-2;
+}
+
+.playlist__user-img {
+  @apply h-24 w-24 rounded-full;
+}
+
+.playlist__user-name {
+  @apply font-semibold;
+}
+
+.playlist__user-songs::before {
+  @apply mr-2 font-bold;
+  content: '•';
+}
+
+/* .playlist__nav */
+.playlist__nav {
+  @apply py-24 flex items-center gap-24 bg-gradient-to-b opacity-50 to-black;
+}
+
+.playlist__nav svg {
+  @apply text-green-500 text-7xl cursor-pointer;
+}
+
+.playlist__nav svg:hover {
+  @apply transform scale-105;
+}
+
+.playlist__nav .heart {
+  @apply text-gray-300 text-5xl;
+}
+
+.playlist__nav .heart--active {
+  @apply text-green-500;
+}
+
+.playlist__nav .heart:hover,
+.playlist__nav .heart--active:hover {
+  @apply text-green-500 !important;
+}
+
+/* .playlist__songs */
+.playlist__songs {
+  @apply py-24 px-24;
+}
+
+/* .likedSongs .playlist__header */
+.likedSongs .playlist__header {
+  @apply bg-cover bg-gradient-to-b opacity-10;
+  background-image: url('https://images.unsplash.com/photo-1685521887135-c2be2c51265a?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+/* .likedSongs .playlist__nav */
+.likedSongs .playlist__nav {
+  @apply bg-gradient-to-b opacity-50 to-black;
+}

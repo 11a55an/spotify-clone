@@ -1,0 +1,3 @@
+.input {
+  @apply min-w-96 px-6 py-5 text-xl font-normal text-white bg-gray-900 border-none rounded-lg outline outline-2 outline-gray-600 focus:outline-gray-200;
+}

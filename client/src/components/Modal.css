@@ -1,0 +1,33 @@
+/* Base modal styles */
+.modal {
+  @apply w-96 p-6 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-gray-800 rounded-lg shadow-2xl;
+}
+
+/* Admin modal form styles */
+.modal--admin .modal__form {
+  @apply flex flex-col gap-3;
+}
+
+/* Playlist modal styles */
+.modal--playlist {
+  @apply w-[50rem];
+}
+
+.modal--playlist .modal__form {
+  @apply grid grid-cols-[18rem_auto] gap-4;
+}
+
+.modal--playlist textarea {
+  @apply h-48 mt-4;
+}
+
+.modal--playlist button {
+  @apply mt-2;
+}
+
+/* Input and textarea styles */
+.modal input,
+.modal textarea {
+  @apply w-full p-3 text-base text-white bg-white/10 border border-transparent rounded-md;
+  font-family: inherit; /* Tailwind CSS does not have a utility for this */
+}

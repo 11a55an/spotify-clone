@@ -1,0 +1,20 @@
+/* Loading styles */
+.loading {
+  @apply grid place-content-center grid-cols-1;
+
+  img {
+    @apply h-48 w-48 mb-8; /* Adjust height and width as needed */
+    fill: red; /* Assuming you are using SVG and trying to apply fill color */
+  }
+
+  a,
+  a:link,
+  a:visited {
+    @apply text-current; /* Inherit text color */
+  }
+}
+
+/* Full-height utility */
+.full-height {
+  @apply h-screen; /* Equivalent to height: 100vh; */
+}

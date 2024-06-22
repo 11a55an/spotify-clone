@@ -1,0 +1,29 @@
+/* Square list styles */
+.square-list {
+  @apply grid grid-cols-5 gap-6; /* Adjust gap as needed */
+}
+
+/* Square card styles */
+.square-card {
+  @apply w-full p-4 relative text-base text-white bg-gray-900 rounded-lg shadow-lg transition duration-300 ease-in-out;
+
+  &:hover {
+    @apply bg-gray-800;
+  }
+}
+
+.square-card img {
+  @apply w-full mb-4 rounded-lg shadow-lg;
+}
+
+.square-card__name {
+  @apply font-bold text-lg mb-1;
+}
+
+.square-card__btn {
+  @apply absolute bottom-4 right-4 hidden text-5xl text-green-500;
+}
+
+.square-card--artist img {
+  @apply rounded-full;
+}

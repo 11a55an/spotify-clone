@@ -1,0 +1,23 @@
+/* Base button styles */
+.btn {
+  @apply flex items-center justify-center px-14 py-5 text-2xl font-bold text-black bg-green-500 rounded-full cursor-pointer hover:bg-green-600;
+}
+
+.btn-img {
+  @apply h-4 mx-4 transform scale-150;
+}
+
+/* White button variant */
+.btn-white {
+  @apply bg-white hover:bg-gray-200;
+}
+
+/* Red button variant */
+.btn-red {
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+/* Full width button variant */
+.btn-full-width {
+  @apply w-full;
+}

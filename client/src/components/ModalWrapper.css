@@ -1,0 +1,35 @@
+.modal-wrapper {
+  @apply w-96 p-6;
+  @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  @apply text-white bg-gray-900 border-none rounded-lg shadow-2xl;
+}
+
+.modal-wrapper__close {
+  @apply text-xl cursor-pointer;
+}
+
+.modal-wrapper__header {
+  @apply mb-4 flex items-center justify-between;
+}
+
+.modal-wrapper__header h2 {
+  @apply text-lg;
+}
+
+.modal-wrapper form {
+  @apply flex flex-col gap-3;
+}
+
+.modal-wrapper form img {
+  @apply h-48 w-48 my-4 self-center;
+}
+
+/* TYPE: List */
+.modal-wrapper--list {
+  @apply overflow-y-auto;
+}
+
+.modal-wrapper__item {
+  @apply p-3;
+  @apply bg-gray-800 hover:bg-gray-700 rounded-md cursor-pointer;
+}
